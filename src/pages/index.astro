@@ -1,0 +1,24 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Hi!</h1>
+			<h3>My name is Jonathan Lee and I am a passionate Software Engineer.</h3>
+      <h5>I currently work full-time as a Software Engineer at <a href="https://www.fidelity.com/">Fidelity Investments</a>.</h5>
+      <h5>Outside of work I am also building a closed-source (for now) solution for people living in shared accomodation, i.e. people with roommates</h5>
+      <p>You can check it out here: <a href="https://www.roomyledger.com">RoomyLedger.com</a></p>
+		</main>
+		<Footer />
+	</body>
+</html>
